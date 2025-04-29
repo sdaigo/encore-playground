@@ -1,0 +1,17 @@
+{
+  "$schema": "https://encore.dev/schemas/infra.schema.json",
+  "sql_servers": [
+    {
+      "host": "postgres:5432",
+      "databases": {
+        "url": {
+          "username": "postgres",
+          "name": "url",
+          "password": {
+            "$env": "DB_PASSWORD"
+          }
+        }
+      }
+    }
+  ]
+}
