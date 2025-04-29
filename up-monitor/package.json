@@ -1,0 +1,17 @@
+{
+  "name": "encore-ts-starter",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Encore Typescript Starter",
+  "license": "MPL-2.0",
+  "type": "module",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^20.5.7",
+    "lefthook": "^1.11.12",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "encore.dev": "^1.46.20"
+  }
+}
