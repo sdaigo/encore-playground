@@ -1,0 +1,18 @@
+generator client {
+  provider = "prisma-client"
+  binaryTargets = ["native", "debian-openssl-3.0.x"]
+  output = "../generated/prisma/client"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://up-monitor-4sp2:shadow-d0881tb6lq567bsmsb1g@127.0.0.1:9500/sites?sslmode=disable"
+}
+
+model Site {
+  id        String        @id @default(cuid())
+  url       String    @unique
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+}
